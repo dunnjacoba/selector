@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar{
+  position:relative;
+  height: 4rem;
+  width: auto;
+  background-color: black;
+  color: aliceblue;
+}
+
+.footer {
+  position:relative;
+  height: 4rem;
+  width: auto;
+  background-color: black;
+  color: aliceblue;
+}
