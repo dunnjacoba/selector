@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/styles/layout";
-import Card from "react-bootstrap/Card";
+import Cards from "../components/cards.jsx";
 
 export default function Restaurant() {
   const rest = {
@@ -12,12 +12,7 @@ export default function Restaurant() {
   return (
     <Layout>
       <div>Selection</div>
-      <Card style={{ color: "black", padding: "3px" }}>
-        <Card.Img variant="top" src={rest.image} alt="Restaurant Logo" />
-        <Card.Body>
-          <Card.Title>{rest.name}</Card.Title>
-        </Card.Body>
-      </Card>
+      <Cards rest={rest} />
     </Layout>
   );
 }
