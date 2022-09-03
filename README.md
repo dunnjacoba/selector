@@ -1,3 +1,5 @@
+![actions](https://github.com/dunnjacoba/selector/actions/workflows/actions.yml/badge.svg?event=push)
+
 # Selector
 
 This app is meant to help settle the debate of what to eat?
