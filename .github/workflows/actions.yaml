@@ -19,3 +19,15 @@ jobs:
         uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: automerge
+
+  automerge:
+    runs-on: ubuntu-latest
+    needs: check-bats-version
+    steps:
+     - id: automerge
+      name: automerge
+      uses: "pascalgn/automerge-action@v0.15.5"
+      env:
+        GITHUB_TOKEN: "${{secrets.GITHUB_TOKEN}}"
+        MERGE_RETRIES: 10
+        MERGE_RETRY_SLEEP: 10000
