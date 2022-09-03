@@ -7,6 +7,7 @@ export default function Cards(props) {
       <Card.Img variant="top" src={props.rest.image} alt="Restaurant Logo" />
       <Card.Body>
         <Card.Title>{props.rest.name}</Card.Title>
+        <Card.Link>{props.rest.site}</Card.Link>
       </Card.Body>
     </Card>
   );
