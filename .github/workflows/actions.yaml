@@ -1,5 +1,5 @@
 name: actions
-on: 
+on:
   pull_request:
   push:
     branches: main
@@ -19,14 +19,3 @@ jobs:
         uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: automerge
-
-    automerge:
-    needs: actions
-    steps:
-      - id: automerge
-        name: automerge
-        uses: "pascalgn/automerge-action@v0.15.3"
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_RETRIES: 10
-          MERGE_RETRY_SLEEP: 1000
