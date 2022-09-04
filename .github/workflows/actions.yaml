@@ -5,15 +5,15 @@ on:
     branches: main
 
 jobs:
-  check-bats-version:
+  runsJest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: "14"
-      - run: npm install -g bats
-      - run: bats -v
+      - run: npm ci
+      - run: npm run test
 
       - name: Add Label
         uses: actions-ecosystem/action-add-labels@v1
@@ -22,6 +22,7 @@ jobs:
 
   automerge:
     runs-on: ubuntu-latest
+    needs: runsJest
     steps:
       - id: automerge
         name: automerge
