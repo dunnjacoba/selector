@@ -9,6 +9,8 @@ This app is meant to help settle the debate of what to eat?
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). This project is utilizing
 [React-Bootstrap](https://react-bootstrap.github.io/) to minimalize design variations. Please keep inline styling to a minimum.
 
+- Please add to the <code>src/restaurantData.js</code> array of restaurants in your local area!
+
 ## Available Scripts
 
 Before running any other scripts:

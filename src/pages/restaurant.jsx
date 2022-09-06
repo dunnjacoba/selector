@@ -7,7 +7,6 @@ import restaurant from "../components/restaurantData";
 export default function Restaurant() {
   const restSelector = () => {
     let restSelected = Math.floor(Math.random() * 3);
-
     return restSelected;
   };
 
