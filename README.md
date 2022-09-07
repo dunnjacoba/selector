@@ -35,8 +35,15 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Learn More
+## Contributions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Please add restaurant data from those local to you to the <code>src/components/restaurantData.js</code>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- For now this will be a static data source.
+- The format for additions to the array is:
+  <code> {
+  name: "{restaurant name}",
+  image: "{restaurant logo URL}",
+  site: "{restaurant website URL}"
+  },
+  </code>
