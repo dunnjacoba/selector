@@ -1,4 +1,4 @@
-![actions](https://github.com/dunnjacoba/selector/actions/workflows/actions.yaml/badge.svg?event=push)
+![actions](https://github.com/dunnjacoba/selector/actions/workflows/actions.yaml/badge.svg)
 
 # Selector
 
