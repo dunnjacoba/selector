@@ -13,3 +13,8 @@ test("Restaurants", () => {
   const display = screen.getByText(/Selection/i);
   expect(display).toBeInTheDocument();
 });
+
+test("wanna fail", () => {
+  render(<Home />);
+  expect(screen.getByTestId("one")).toBeInTheDocument();
+});
