@@ -1,6 +1,8 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, cleanup } from "@testing-library/react";
 import Home from "./pages/home";
 import Restaurant from "./pages/restaurant";
+
+afterEach(cleanup);
 
 test("Home", () => {
   render(<Home />);
